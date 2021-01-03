@@ -317,12 +317,12 @@ PODS:
 
 DEPENDENCIES:
   - Masonry (~> 1.1)
-  - QMUIKit
-  - YogaKit (~> 1.7)
-  - YYKit
+  - QMUIKit (~> 4.1.3)
+  - YogaKit (~> 1.18.1)
+  - YYKit (~> 1.0.9)
 
 SPEC REPOS:
-  trunk:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - Masonry
     - QMUIKit
     - Yoga
@@ -336,6 +336,6 @@ SPEC CHECKSUMS:
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 60f5d8d4798b534521e46a2db5c12b0ef55edee1
+PODFILE CHECKSUM: e58681c36b62f4a21a223872e6d67604a38e50f6
 
-COCOAPODS: 1.9.2
+COCOAPODS: 1.10.0
