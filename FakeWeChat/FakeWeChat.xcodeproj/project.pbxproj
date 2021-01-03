@@ -28,6 +28,8 @@
 		046D57A32590C66C00CCFF47 /* UITabBarItem+FWCBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D57A22590C66C00CCFF47 /* UITabBarItem+FWCBadge.m */; };
 		04FCCC592592F56900A84A85 /* FWCBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FCCC582592F56900A84A85 /* FWCBaseTableViewCell.m */; };
 		04FCCC6425A0A80000A84A85 /* FWCBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FCCC6325A0A80000A84A85 /* FWCBaseTableViewController.m */; };
+		04FCCC8125A16FCC00A84A85 /* FWCCommonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FCCC8025A16FCC00A84A85 /* FWCCommonTableViewCell.m */; };
+		04FCCC9225A2242800A84A85 /* Me.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FCCC9125A2242800A84A85 /* Me.xcassets */; };
 		64D7A8D15B9800571991F5AD /* Pods_FakeWeChat_FakeWeChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4BD92874AB96E65BB636A0C /* Pods_FakeWeChat_FakeWeChatUITests.framework */; };
 		97F86D0FDB96D7E6F5F69F1F /* Pods_FakeWeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27EAC3C4430FB4F3DF47754 /* Pods_FakeWeChat.framework */; };
 		ACDC0348312D0F38F296CA8F /* Pods_FakeWeChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C1F6DE08BDB353B8F62A8D /* Pods_FakeWeChatTests.framework */; };
@@ -100,6 +102,10 @@
 		04FCCC582592F56900A84A85 /* FWCBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCBaseTableViewCell.m; sourceTree = "<group>"; };
 		04FCCC6225A0A80000A84A85 /* FWCBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCBaseTableViewController.h; sourceTree = "<group>"; };
 		04FCCC6325A0A80000A84A85 /* FWCBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCBaseTableViewController.m; sourceTree = "<group>"; };
+		04FCCC7F25A16FCC00A84A85 /* FWCCommonTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCCommonTableViewCell.h; sourceTree = "<group>"; };
+		04FCCC8025A16FCC00A84A85 /* FWCCommonTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCCommonTableViewCell.m; sourceTree = "<group>"; };
+		04FCCC8725A1717B00A84A85 /* FWCYogaMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCYogaMacro.h; sourceTree = "<group>"; };
+		04FCCC9125A2242800A84A85 /* Me.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Me.xcassets; sourceTree = "<group>"; };
 		1F9188CFD04586F10287B332 /* Pods-FakeWeChat-FakeWeChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeWeChat-FakeWeChatUITests.debug.xcconfig"; path = "Target Support Files/Pods-FakeWeChat-FakeWeChatUITests/Pods-FakeWeChat-FakeWeChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		624C472BB65A92A44B837C67 /* Pods-FakeWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeWeChat.release.xcconfig"; path = "Target Support Files/Pods-FakeWeChat/Pods-FakeWeChat.release.xcconfig"; sourceTree = "<group>"; };
 		77C1F6DE08BDB353B8F62A8D /* Pods_FakeWeChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FakeWeChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -236,6 +242,7 @@
 		044479B8258CBE62005B550F /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				04FCCC8625A1715A00A84A85 /* Common */,
 				04FCCC4A2592F43100A84A85 /* Cell */,
 				046D579A258F948600CCFF47 /* Badge */,
 				046D578D258F8F0900CCFF47 /* Category */,
@@ -377,6 +384,8 @@
 			children = (
 				04FCCC572592F56900A84A85 /* FWCBaseTableViewCell.h */,
 				04FCCC582592F56900A84A85 /* FWCBaseTableViewCell.m */,
+				04FCCC7F25A16FCC00A84A85 /* FWCCommonTableViewCell.h */,
+				04FCCC8025A16FCC00A84A85 /* FWCCommonTableViewCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -385,8 +394,17 @@
 			isa = PBXGroup;
 			children = (
 				04447912258AE3F8005B550F /* Main.xcassets */,
+				04FCCC9125A2242800A84A85 /* Me.xcassets */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		04FCCC8625A1715A00A84A85 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				04FCCC8725A1717B00A84A85 /* FWCYogaMacro.h */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		6367A34D15E88D946091111B /* Frameworks */ = {
@@ -520,6 +538,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04447913258AE3F8005B550F /* Main.xcassets in Resources */,
+				04FCCC9225A2242800A84A85 /* Me.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,6 +681,7 @@
 				044479BD258CBE62005B550F /* FWCColor.m in Sources */,
 				044479C5258CCB23005B550F /* FWCTabBarController.m in Sources */,
 				04447B4D258EF9B7005B550F /* FWCHomeViewController.m in Sources */,
+				04FCCC8125A16FCC00A84A85 /* FWCCommonTableViewCell.m in Sources */,
 				04447B5B258EF9F7005B550F /* FWCDiscoverViewController.m in Sources */,
 				046D579D258F94AC00CCFF47 /* FWCBadge.m in Sources */,
 				046D5790258F8F1B00CCFF47 /* UIView+FWCUI.m in Sources */,

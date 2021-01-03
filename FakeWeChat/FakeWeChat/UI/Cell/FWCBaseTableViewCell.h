@@ -14,10 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (CGFloat)cellHeight;
 
 - (UIImageView *)arrowView;
-- (void)setArrowViewToDefaultPosition;
 
-@property(nonatomic, strong) NSString *title;
-- (void)setTitleToDefaultPosition;
+- (void)reloadData;
 
 @end
 
