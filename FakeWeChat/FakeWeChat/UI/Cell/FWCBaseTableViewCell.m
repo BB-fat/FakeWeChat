@@ -17,8 +17,9 @@
 @implementation FWCBaseTableViewCell
 
 // 子类重写这个方法供TableView调用
+// 默认高度为【我】页面内cell的高度
 + (CGFloat)cellHeight {
-    return 56;
+    return 57;
 }
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
@@ -29,7 +30,7 @@
             FWCYogaEnable;
             FWCYogaFlexDirectionRow;
             FWCYogaAlignItemsCenter;
-            FWCYogaPaddingHorizontal(20);
+            FWCYogaPaddingHorizontal(16);
             FWCYogaPaddingVertical(10);
         }];
     }

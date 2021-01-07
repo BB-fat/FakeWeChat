@@ -69,11 +69,15 @@
 }
 
 + (UIColor *)cellBackground {
-    return FWCColorThemed(UIColor.whiteColor, FWCColor.coreGrey1);
+    return FWCColorThemed(UIColor.whiteColor, FWCHexColor(@"18191A"));
 }
 
 + (UIColor *)normalText {
     return FWCColorThemed(UIColor.blackColor, UIColor.whiteColor);
+}
+
++ (UIColor *)greyText {
+    return FWCColorThemed(FWCHexColor(@"7F8081"), FWCHexColor(@"8A8B8C"));
 }
 
 @end

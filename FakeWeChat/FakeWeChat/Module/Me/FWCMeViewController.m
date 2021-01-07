@@ -23,7 +23,7 @@
 #pragma mark - TableView
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return 10;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -35,6 +35,7 @@
         FWCCommonTableViewCellData *data = FWCCommonTableViewCellData.new;
         data.title = @"测试cell";
         data.iconName = @"me_pay";
+        data.subTitle = @"未开启";
         cell.data = data;
         [cell reloadData];
     }
