@@ -39,7 +39,6 @@
         }];
 
         _iconView = UIImageView.alloc.init;
-        _iconView.hidden = YES;
         [_iconView configureLayoutWithBlock:^(YGLayout *_Nonnull layout) {
             FWCYogaEnable;
             layout.height = YGPointValue(18);
@@ -76,7 +75,6 @@
             layout.marginLeft = YGPointValue(10);
         }];
 
-        [_leftContainer addSubview:_iconView];
         [_leftContainer addSubview:_titleLabel];
 
         [_rightContainer addSubview:_subTitleLabel];
@@ -90,10 +88,10 @@
 
 - (void)reloadData {
     if (!_data.iconName || _data.iconName.length == 0) {
-        _iconView.hidden = YES;
+        [_iconView removeFromSuperview];
         self.separatorInset = UIEdgeInsetsZero;
     } else {
-        _iconView.hidden = NO;
+        [_leftContainer insertSubview:_iconView belowSubview:_titleLabel];
         _iconView.image = [UIImage imageNamed:_data.iconName];
         self.separatorInset = UIEdgeInsetsMake(0, 52, 0, 0);
     }
