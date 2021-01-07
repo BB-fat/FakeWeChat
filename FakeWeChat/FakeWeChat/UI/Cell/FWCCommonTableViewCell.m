@@ -29,13 +29,16 @@
         }];
 
         _leftContainer = UIView.alloc.init;
-        [_leftContainer configureLayoutWithBlock:^(YGLayout *_Nonnull layout){
-            FWCYogaEnable FWCYogaFlexDirectionRow}];
+        [_leftContainer configureLayoutWithBlock:^(YGLayout *_Nonnull layout) {
+            FWCYogaEnable;
+            FWCYogaFlexDirectionRow;
+        }];
 
         _iconView = UIImageView.alloc.init;
         _iconView.hidden = YES;
         [_iconView configureLayoutWithBlock:^(YGLayout *_Nonnull layout) {
-            FWCYogaEnable layout.height = YGPointValue(30);
+            FWCYogaEnable;
+            layout.height = YGPointValue(30);
             layout.width = YGPointValue(30);
             layout.marginRight = YGPointValue(20);
         }];
@@ -43,11 +46,13 @@
         _titleLabel = QMUILabel.alloc.init;
         _titleLabel.font = UIFontMake(14);
         _titleLabel.textColor = FWCColor.normalText;
-        [_titleLabel configureLayoutWithBlock:^(YGLayout *_Nonnull layout){
-            FWCYogaEnable}];
+        [_titleLabel configureLayoutWithBlock:^(YGLayout *_Nonnull layout) {
+            FWCYogaEnable;
+        }];
 
-        [self.arrowView configureLayoutWithBlock:^(YGLayout *_Nonnull layout){
-            FWCYogaEnable}];
+        [self.arrowView configureLayoutWithBlock:^(YGLayout *_Nonnull layout) {
+            FWCYogaEnable;
+        }];
 
         [_leftContainer addSubview:_iconView];
         [_leftContainer addSubview:_titleLabel];

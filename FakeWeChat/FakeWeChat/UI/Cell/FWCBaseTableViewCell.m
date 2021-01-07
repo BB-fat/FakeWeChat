@@ -26,7 +26,10 @@
         self.backgroundColor = FWCColor.cellBackground;
 
         [self.contentView configureLayoutWithBlock:^(YGLayout *_Nonnull layout) {
-            FWCYogaEnable FWCYogaFlexDirectionRow FWCYogaAlignItemsCenter FWCYogaPaddingHorizontal(20);
+            FWCYogaEnable;
+            FWCYogaFlexDirectionRow;
+            FWCYogaAlignItemsCenter;
+            FWCYogaPaddingHorizontal(20);
             FWCYogaPaddingVertical(10);
         }];
     }
