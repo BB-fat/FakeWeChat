@@ -76,3 +76,11 @@
 }
 
 @end
+
+@implementation UIView (subview)
+
+- (BOOL)containsSubview:(UIView *)view {
+    return [self.subviews containsObject:view];
+}
+
+@end

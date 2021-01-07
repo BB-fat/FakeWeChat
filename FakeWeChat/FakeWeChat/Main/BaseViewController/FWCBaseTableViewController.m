@@ -19,6 +19,8 @@
     self.tableView.backgroundColor = FWCColor.background;
 
     self.titleView.titleLabel.font = UIFontBoldMake(18);
+
+    self.tableView.separatorColor = FWCColorThemed(FWCHexColor(@"E4E5E6"), FWCHexColor(@"232425"));
 }
 
 #pragma mark NavigationController外观

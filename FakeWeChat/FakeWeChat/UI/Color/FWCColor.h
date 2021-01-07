@@ -39,6 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIColor *)background;
 + (UIColor *)cellBackground;
 + (UIColor *)normalText;
++ (UIColor *)greyText;
 
 @end
 

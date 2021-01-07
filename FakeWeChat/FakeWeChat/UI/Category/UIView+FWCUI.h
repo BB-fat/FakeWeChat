@@ -22,4 +22,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface UIView (subview)
+
+- (BOOL)containsSubview:(UIView *)view;
+
+@end
+
 NS_ASSUME_NONNULL_END

@@ -8,6 +8,8 @@
 #ifndef FWCUI_h
 #define FWCUI_h
 
+#pragma mark - SDK
+
 #import <UIKit/UIKit.h>
 
 #import <Masonry/Masonry.h>
@@ -16,10 +18,16 @@
 
 #import <YogaKit/UIView+Yoga.h>
 
+#pragma mark -
+
 #import "FWCColor.h"
 
 #import "FWCImageMacro.h"
 
 #import "UIView+FWCUI.h"
+
+#pragma mark - Common
+
+#import "FWCYogaMacro.h"
 
 #endif /* FWCUI_h */

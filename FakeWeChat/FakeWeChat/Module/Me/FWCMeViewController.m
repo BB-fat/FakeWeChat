@@ -6,7 +6,7 @@
 //
 
 #import "FWCMeViewController.h"
-#import "FWCBaseTableViewCell.h"
+#import "FWCCommonTableViewCell.h"
 #import "FWCUI.h"
 #import <YYKit/YYKit.h>
 
@@ -23,18 +23,21 @@
 #pragma mark - TableView
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return 10;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    FWCBaseTableViewCell *cell;
-    cell = [tableView dequeueReusableCellWithIdentifier:FWCBaseTableViewCell.className];
+    FWCCommonTableViewCell *cell;
+    cell = [tableView dequeueReusableCellWithIdentifier:FWCCommonTableViewCell.className];
     if (!cell) {
-        cell = [FWCBaseTableViewCell.alloc initWithStyle:UITableViewCellStyleDefault
-                                         reuseIdentifier:FWCBaseTableViewCell.className];
-        cell.title = @"测试cell";
-        [cell setTitleToDefaultPosition];
-        [cell setArrowViewToDefaultPosition];
+        cell = [FWCCommonTableViewCell.alloc initWithStyle:UITableViewCellStyleDefault
+                                           reuseIdentifier:FWCCommonTableViewCell.className];
+        FWCCommonTableViewCellData *data = FWCCommonTableViewCellData.new;
+        data.title = @"测试cell";
+        data.iconName = @"me_pay";
+        data.subTitle = @"未开启";
+        cell.data = data;
+        [cell reloadData];
     }
     return cell;
 }
