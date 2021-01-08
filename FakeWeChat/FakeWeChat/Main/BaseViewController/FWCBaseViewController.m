@@ -16,6 +16,14 @@
     self.titleView.titleLabel.font = UIFontBoldMake(18);
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
+    if (!self.showNavigationBarDivider) {
+        self.navigationController.navigationBar.shadowImage = UIImage.new;
+    }
+}
+
 #pragma mark NavigationController外观
 - (UIColor *)titleViewTintColor {
     return FWCColor.normalText;
@@ -31,6 +39,11 @@
 
 - (BOOL)shouldCustomizeNavigationBarTransitionIfHideable {
     return YES;
+}
+
+// 控制NavigationBar分割线的显示
+- (BOOL)showNavigationBarDivider {
+    return NO;
 }
 
 @end

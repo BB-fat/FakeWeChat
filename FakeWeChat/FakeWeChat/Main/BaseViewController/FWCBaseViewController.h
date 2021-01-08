@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, readonly) UITabBarItem *fwc_tabBarItem;
 
+- (BOOL)showNavigationBarDivider;
+
 @end
 
 NS_ASSUME_NONNULL_END

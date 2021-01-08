@@ -17,8 +17,12 @@
 
 @implementation FWCMeViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (UIColor *)navigationBarBarTintColor {
+    return FWCColor.cellBackground;
+}
+
+- (BOOL)showNavigationBarDivider {
+    return NO;
 }
 
 #pragma mark - TableView
