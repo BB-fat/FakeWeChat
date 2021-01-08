@@ -26,8 +26,12 @@
 
 #import "UIView+FWCUI.h"
 
+#import "UIImageView+FWCUI.h"
+
 #pragma mark - Common
 
 #import "FWCYogaMacro.h"
+
+#import "FWCLabelMacro.h"
 
 #endif /* FWCUI_h */

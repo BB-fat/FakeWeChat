@@ -10,8 +10,19 @@
 
 #define FWCYogaEnable layout.isEnabled = YES
 
+#define FWCYogaHeight(_value) layout.height = YGPointValue(_value)
+#define FWCYogaWidth(_value) layout.width = YGPointValue(_value)
+#define FWCYogaHeightAndWidth(_value)                                                                                  \
+    layout.height = YGPointValue(_value);                                                                              \
+    layout.width = YGPointValue(_value)
+
 #define FWCYogaFlexDirectionRow layout.flexDirection = YGFlexDirectionRow
 #define FWCYogaFlexDirectionColumn layout.flexDirection = YGFlexDirectionColumn
+
+#define FWCJustifyContentStart layout.justifyContent = YGJustifyFlexStart
+#define FWCJustifyContentEnd layout.justifyContent = YGJustifyFlexEnd
+#define FWCJustifyContentCenter layout.justifyContent = YGJustifyCenter
+#define FWCJustifyContentSpaceBetween layout.justifyContent = YGJustifySpaceBetween
 
 #define FWCYogaAlignItemsStart layout.alignItems = YGAlignFlexStart
 #define FWCYogaAlignItemsEnd layout.alignItems = YGAlignFlexEnd
