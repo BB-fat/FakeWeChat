@@ -52,7 +52,6 @@
 
     [childrenData enumerateObjectsUsingBlock:^(NSDictionary *_Nonnull obj, NSUInteger idx, BOOL *_Nonnull stop) {
         UIViewController *vc = [NSClassFromString(obj[kChildClassName]) new];
-        vc.title = obj[kTitle];
         UINavigationController *nav = [FWCBaseNavigationController.alloc initWithRootViewController:vc];
         UITabBarItem *item = nav.tabBarItem;
         item.title = obj[kTitle];
