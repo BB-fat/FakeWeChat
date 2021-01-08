@@ -36,4 +36,8 @@
     return self.navigationController.tabBarItem;
 }
 
+- (BOOL)shouldCustomizeNavigationBarTransitionIfHideable {
+    return YES;
+}
+
 @end

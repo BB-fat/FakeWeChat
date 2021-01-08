@@ -20,6 +20,10 @@
     [super viewDidLoad];
 }
 
+- (BOOL)preferredNavigationBarHidden {
+    return YES;
+}
+
 #pragma mark - TableView
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
