@@ -11,6 +11,9 @@
 #import "FWCUI.h"
 #import <YYKit/YYKit.h>
 
+#define kCellDataIcon @"kCellDataIcon"
+#define kCellDataTitle @"kCellDataTitle"
+
 @interface FWCMeViewController ()
 
 @end
@@ -25,33 +28,66 @@
     return NO;
 }
 
+- (NSArray<NSArray *> *)cellData {
+    return @[
+        @[ @{} ],
+        @[ @{kCellDataIcon : @"me_watch", kCellDataTitle : @"Watch微信"} ],
+        @[ @{kCellDataIcon : @"me_pay", kCellDataTitle : @"支付"} ],
+        @[
+            @{kCellDataIcon : @"me_favourite", kCellDataTitle : @"收藏"},
+            @{kCellDataIcon : @"me_album", kCellDataTitle : @"朋友圈"},
+            @{kCellDataIcon : @"me_card_pocket", kCellDataTitle : @"卡包"},
+            @{kCellDataIcon : @"me_biaoqing", kCellDataTitle : @"表情"},
+        ],
+        @[ @{kCellDataIcon : @"me_setting", kCellDataTitle : @"设置"} ],
+    ];
+}
+
 #pragma mark - TableView
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return self.cellData[section].count;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return self.cellData.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    //    FWCCommonTableViewCell *cell;
-    //    cell = [tableView dequeueReusableCellWithIdentifier:FWCCommonTableViewCell.className];
-    //    if (!cell) {
-    //        cell = [FWCCommonTableViewCell.alloc initWithStyle:UITableViewCellStyleDefault
-    //                                           reuseIdentifier:FWCCommonTableViewCell.className];
-    //        FWCCommonTableViewCellData *data = FWCCommonTableViewCellData.new;
-    //        data.title = @"测试cell";
-    //        data.iconName = @"me_pay";
-    //        data.subTitle = @"未开启";
-    //        cell.data = data;
-    //        [cell reloadData];
-    //    }
-    FWCMeUserTableViewCell *cell = [FWCMeUserTableViewCell.alloc initWithStyle:UITableViewCellStyleDefault
-                                                               reuseIdentifier:FWCMeUserTableViewCell.className];
+    FWCBaseTableViewCell *cell;
+    if (indexPath.section == 0) {
+        cell = [FWCMeUserTableViewCell.alloc initWithStyle:UITableViewCellStyleDefault
+                                           reuseIdentifier:FWCMeUserTableViewCell.className];
+    } else {
+        FWCCommonTableViewCell *commonCell;
+        commonCell = [FWCCommonTableViewCell.alloc initWithStyle:UITableViewCellStyleDefault
+                                                 reuseIdentifier:FWCCommonTableViewCell.className];
+        FWCCommonTableViewCellData *data = FWCCommonTableViewCellData.new;
+        data.title = self.cellData[indexPath.section][indexPath.row][kCellDataTitle];
+        data.iconName = self.cellData[indexPath.section][indexPath.row][kCellDataIcon];
+        commonCell.data = data;
+        [commonCell reloadData];
+        cell = commonCell;
+    }
     return cell;
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    if (section == 0) {
+        return UIView.alloc.init;
+    } else {
+        UIView *headerView = [UIView.alloc initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 10)];
+        headerView.backgroundColor = FWCColor.background;
+        return headerView;
+    }
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    //    return FWCBaseTableViewCell.cellHeight;
-    return FWCMeUserTableViewCell.cellHeight;
+    if (indexPath.section == 0) {
+        return FWCMeUserTableViewCell.cellHeight;
+    } else {
+        return FWCBaseTableViewCell.cellHeight;
+    }
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

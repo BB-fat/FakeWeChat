@@ -41,8 +41,7 @@
         _iconView = UIImageView.alloc.init;
         [_iconView configureLayoutWithBlock:^(YGLayout *_Nonnull layout) {
             FWCYogaEnable;
-            layout.height = YGPointValue(18);
-            layout.width = YGPointValue(20);
+            FWCYogaHeightAndWidth(22);
             layout.marginRight = YGPointValue(16);
         }];
 

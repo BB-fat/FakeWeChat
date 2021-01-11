@@ -51,6 +51,8 @@
         }];
 
         _avatarView = [UIImageView.alloc initWithImage:[UIImage imageNamed:@"me_avatar"]];
+        _avatarView.layer.cornerRadius = 6;
+        _avatarView.layer.masksToBounds = YES;
         [_avatarView configureLayoutWithBlock:^(YGLayout *_Nonnull layout) {
             FWCYogaEnable;
             FWCYogaHeightAndWidth(AvatarHeight);
