@@ -45,12 +45,14 @@
         self.separatorInset = UIEdgeInsetsZero;
 
         [self.contentView configureLayoutWithBlock:^(YGLayout *_Nonnull layout) {
-            FWCJustifyContentSpaceBetween;
+            FWCYogaJustifyContentSpaceBetween;
             FWCYogaAlignItemsCenter;
             layout.paddingBottom = YGPointValue(40);
         }];
 
         _avatarView = [UIImageView.alloc initWithImage:[UIImage imageNamed:@"me_avatar"]];
+        _avatarView.layer.cornerRadius = 6;
+        _avatarView.layer.masksToBounds = YES;
         [_avatarView configureLayoutWithBlock:^(YGLayout *_Nonnull layout) {
             FWCYogaEnable;
             FWCYogaHeightAndWidth(AvatarHeight);
@@ -88,7 +90,7 @@
             FWCYogaEnable;
             FWCYogaFlexDirectionColumn;
             FWCYogaHeight(AvatarHeight);
-            FWCJustifyContentSpaceBetween;
+            FWCYogaJustifyContentSpaceBetween;
             layout.width = YGPercentValue(80);
         }];
 
@@ -96,7 +98,7 @@
         [_wxID_qrCode_container configureLayoutWithBlock:^(YGLayout *_Nonnull layout) {
             FWCYogaEnable;
             FWCYogaFlexDirectionRow;
-            FWCJustifyContentSpaceBetween;
+            FWCYogaJustifyContentSpaceBetween;
             layout.width = YGPercentValue(100);
         }];
 

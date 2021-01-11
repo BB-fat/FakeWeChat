@@ -80,4 +80,8 @@
     return FWCColorThemed(FWCHexColor(@"7F8081"), FWCHexColor(@"8A8B8C"));
 }
 
++ (UIColor *)separator {
+    return FWCColorThemed(FWCHexColor(@"E5E4E5"), FWCHexColor(@"252425"));
+}
+
 @end

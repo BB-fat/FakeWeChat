@@ -41,8 +41,7 @@
         _iconView = UIImageView.alloc.init;
         [_iconView configureLayoutWithBlock:^(YGLayout *_Nonnull layout) {
             FWCYogaEnable;
-            layout.height = YGPointValue(18);
-            layout.width = YGPointValue(20);
+            FWCYogaHeightAndWidth(22);
             layout.marginRight = YGPointValue(16);
         }];
 
@@ -89,7 +88,7 @@
 - (void)reloadData {
     if (!_data.iconName || _data.iconName.length == 0) {
         [_iconView removeFromSuperview];
-        self.separatorInset = UIEdgeInsetsZero;
+        self.separatorInset = UIEdgeInsetsMake(0, 16, 0, 0);
     } else {
         [_leftContainer insertSubview:_iconView belowSubview:_titleLabel];
         _iconView.image = [UIImage imageNamed:_data.iconName];

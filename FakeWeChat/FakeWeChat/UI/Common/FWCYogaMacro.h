@@ -19,10 +19,10 @@
 #define FWCYogaFlexDirectionRow layout.flexDirection = YGFlexDirectionRow
 #define FWCYogaFlexDirectionColumn layout.flexDirection = YGFlexDirectionColumn
 
-#define FWCJustifyContentStart layout.justifyContent = YGJustifyFlexStart
-#define FWCJustifyContentEnd layout.justifyContent = YGJustifyFlexEnd
-#define FWCJustifyContentCenter layout.justifyContent = YGJustifyCenter
-#define FWCJustifyContentSpaceBetween layout.justifyContent = YGJustifySpaceBetween
+#define FWCYogaJustifyContentStart layout.justifyContent = YGJustifyFlexStart
+#define FWCYogaJustifyContentEnd layout.justifyContent = YGJustifyFlexEnd
+#define FWCYogaJustifyContentCenter layout.justifyContent = YGJustifyCenter
+#define FWCYogaJustifyContentSpaceBetween layout.justifyContent = YGJustifySpaceBetween
 
 #define FWCYogaAlignItemsStart layout.alignItems = YGAlignFlexStart
 #define FWCYogaAlignItemsEnd layout.alignItems = YGAlignFlexEnd
