@@ -45,7 +45,7 @@
         self.separatorInset = UIEdgeInsetsZero;
 
         [self.contentView configureLayoutWithBlock:^(YGLayout *_Nonnull layout) {
-            FWCJustifyContentSpaceBetween;
+            FWCYogaJustifyContentSpaceBetween;
             FWCYogaAlignItemsCenter;
             layout.paddingBottom = YGPointValue(40);
         }];
@@ -90,7 +90,7 @@
             FWCYogaEnable;
             FWCYogaFlexDirectionColumn;
             FWCYogaHeight(AvatarHeight);
-            FWCJustifyContentSpaceBetween;
+            FWCYogaJustifyContentSpaceBetween;
             layout.width = YGPercentValue(80);
         }];
 
@@ -98,7 +98,7 @@
         [_wxID_qrCode_container configureLayoutWithBlock:^(YGLayout *_Nonnull layout) {
             FWCYogaEnable;
             FWCYogaFlexDirectionRow;
-            FWCJustifyContentSpaceBetween;
+            FWCYogaJustifyContentSpaceBetween;
             layout.width = YGPercentValue(100);
         }];
 

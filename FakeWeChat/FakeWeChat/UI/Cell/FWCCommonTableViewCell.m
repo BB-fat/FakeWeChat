@@ -88,11 +88,15 @@
 - (void)reloadData {
     if (!_data.iconName || _data.iconName.length == 0) {
         [_iconView removeFromSuperview];
-        self.separatorInset = UIEdgeInsetsZero;
+        self.separatorInset = UIEdgeInsetsMake(0, 16, 0, 0);
     } else {
         [_leftContainer insertSubview:_iconView belowSubview:_titleLabel];
         _iconView.image = [UIImage imageNamed:_data.iconName];
         self.separatorInset = UIEdgeInsetsMake(0, 52, 0, 0);
+    }
+
+    if (_data.fullSeparator) {
+        self.separatorInset = UIEdgeInsetsZero;
     }
 
     _titleLabel.text = _data.title;

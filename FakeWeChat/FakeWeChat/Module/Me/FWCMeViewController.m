@@ -65,6 +65,9 @@
         FWCCommonTableViewCellData *data = FWCCommonTableViewCellData.new;
         data.title = self.cellData[indexPath.section][indexPath.row][kCellDataTitle];
         data.iconName = self.cellData[indexPath.section][indexPath.row][kCellDataIcon];
+        if (indexPath.row == self.cellData[indexPath.section].count - 1) {
+            data.fullSeparator = YES;
+        }
         commonCell.data = data;
         [commonCell reloadData];
         cell = commonCell;
