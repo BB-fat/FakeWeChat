@@ -17,6 +17,10 @@
 + (UIColor *)coreGreen2 {
     return [UIColor qmui_colorWithHexString:@"2BA245"];
 }
+//添加内容
++ (UIColor *)coreGreen3 {
+    return [UIColor qmui_colorWithHexString:@"3CB371"];
+}
 
 + (UIColor *)coreGrey1 {
     return [UIColor qmui_colorWithHexString:@"4D4D4D"];

@@ -26,6 +26,19 @@
 		046D5790258F8F1B00CCFF47 /* UIView+FWCUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D578F258F8F1B00CCFF47 /* UIView+FWCUI.m */; };
 		046D579D258F94AC00CCFF47 /* FWCBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D579C258F94AC00CCFF47 /* FWCBadge.m */; };
 		046D57A32590C66C00CCFF47 /* UITabBarItem+FWCBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D57A22590C66C00CCFF47 /* UITabBarItem+FWCBadge.m */; };
+		0478238525AB105D001E27FD /* FWCServiceBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0478238425AB105D001E27FD /* FWCServiceBar.m */; };
+		0478238E25AB1217001E27FD /* FWCPromotionBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0478238D25AB1217001E27FD /* FWCPromotionBar.m */; };
+		0478239125AB1237001E27FD /* FWCThirdPartyServiceBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0478239025AB1237001E27FD /* FWCThirdPartyServiceBar.m */; };
+		0478239425AB125B001E27FD /* FWCPayPageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0478239325AB125B001E27FD /* FWCPayPageButton.m */; };
+		0478239725AB1277001E27FD /* FWCPayPageTitleBlcok.m in Sources */ = {isa = PBXBuildFile; fileRef = 0478239625AB1277001E27FD /* FWCPayPageTitleBlcok.m */; };
+		047823A225AB27D4001E27FD /* FWCPayPageService.plist in Resources */ = {isa = PBXBuildFile; fileRef = 047823A125AB27D4001E27FD /* FWCPayPageService.plist */; };
+		047823A425AB2869001E27FD /* FWCPayPagePromotion.plist in Resources */ = {isa = PBXBuildFile; fileRef = 047823A325AB2869001E27FD /* FWCPayPagePromotion.plist */; };
+		047823A625AB289F001E27FD /* FWCPayPageThirdPartyService.plist in Resources */ = {isa = PBXBuildFile; fileRef = 047823A525AB289F001E27FD /* FWCPayPageThirdPartyService.plist */; };
+		047823A925AB2986001E27FD /* FWCPayPageCommonButtonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 047823A825AB2986001E27FD /* FWCPayPageCommonButtonData.m */; };
+		0491FB6F25A7FDD800ACF828 /* FWCPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491FB6E25A7FDD800ACF828 /* FWCPayViewController.m */; };
+		0491FB7125A8024F00ACF828 /* Pay.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0491FB7025A8024F00ACF828 /* Pay.xcassets */; };
+		0491FB7425A802C700ACF828 /* FWCPayBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491FB7325A802C700ACF828 /* FWCPayBar.m */; };
+		0491FB7725A802F600ACF828 /* FWCPayBarIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491FB7625A802F600ACF828 /* FWCPayBarIcon.m */; };
 		04FCCC592592F56900A84A85 /* FWCBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FCCC582592F56900A84A85 /* FWCBaseTableViewCell.m */; };
 		04FCCC6425A0A80000A84A85 /* FWCBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FCCC6325A0A80000A84A85 /* FWCBaseTableViewController.m */; };
 		04FCCC8125A16FCC00A84A85 /* FWCCommonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FCCC8025A16FCC00A84A85 /* FWCCommonTableViewCell.m */; };
@@ -98,6 +111,28 @@
 		046D579C258F94AC00CCFF47 /* FWCBadge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCBadge.m; sourceTree = "<group>"; };
 		046D57A12590C66C00CCFF47 /* UITabBarItem+FWCBadge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+FWCBadge.h"; sourceTree = "<group>"; };
 		046D57A22590C66C00CCFF47 /* UITabBarItem+FWCBadge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+FWCBadge.m"; sourceTree = "<group>"; };
+		0478238325AB105D001E27FD /* FWCServiceBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCServiceBar.h; sourceTree = "<group>"; };
+		0478238425AB105D001E27FD /* FWCServiceBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCServiceBar.m; sourceTree = "<group>"; };
+		0478238C25AB1217001E27FD /* FWCPromotionBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCPromotionBar.h; sourceTree = "<group>"; };
+		0478238D25AB1217001E27FD /* FWCPromotionBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCPromotionBar.m; sourceTree = "<group>"; };
+		0478238F25AB1237001E27FD /* FWCThirdPartyServiceBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCThirdPartyServiceBar.h; sourceTree = "<group>"; };
+		0478239025AB1237001E27FD /* FWCThirdPartyServiceBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCThirdPartyServiceBar.m; sourceTree = "<group>"; };
+		0478239225AB125B001E27FD /* FWCPayPageButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCPayPageButton.h; sourceTree = "<group>"; };
+		0478239325AB125B001E27FD /* FWCPayPageButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCPayPageButton.m; sourceTree = "<group>"; };
+		0478239525AB1277001E27FD /* FWCPayPageTitleBlcok.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCPayPageTitleBlcok.h; sourceTree = "<group>"; };
+		0478239625AB1277001E27FD /* FWCPayPageTitleBlcok.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCPayPageTitleBlcok.m; sourceTree = "<group>"; };
+		047823A125AB27D4001E27FD /* FWCPayPageService.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FWCPayPageService.plist; sourceTree = "<group>"; };
+		047823A325AB2869001E27FD /* FWCPayPagePromotion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FWCPayPagePromotion.plist; sourceTree = "<group>"; };
+		047823A525AB289F001E27FD /* FWCPayPageThirdPartyService.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FWCPayPageThirdPartyService.plist; sourceTree = "<group>"; };
+		047823A725AB2986001E27FD /* FWCPayPageCommonButtonData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCPayPageCommonButtonData.h; sourceTree = "<group>"; };
+		047823A825AB2986001E27FD /* FWCPayPageCommonButtonData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCPayPageCommonButtonData.m; sourceTree = "<group>"; };
+		0491FB6D25A7FDD800ACF828 /* FWCPayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCPayViewController.h; sourceTree = "<group>"; };
+		0491FB6E25A7FDD800ACF828 /* FWCPayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCPayViewController.m; sourceTree = "<group>"; };
+		0491FB7025A8024F00ACF828 /* Pay.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Pay.xcassets; sourceTree = "<group>"; };
+		0491FB7225A802C700ACF828 /* FWCPayBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCPayBar.h; sourceTree = "<group>"; };
+		0491FB7325A802C700ACF828 /* FWCPayBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCPayBar.m; sourceTree = "<group>"; };
+		0491FB7525A802F600ACF828 /* FWCPayBarIcon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCPayBarIcon.h; sourceTree = "<group>"; };
+		0491FB7625A802F600ACF828 /* FWCPayBarIcon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCPayBarIcon.m; sourceTree = "<group>"; };
 		04FCCC572592F56900A84A85 /* FWCBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCBaseTableViewCell.h; sourceTree = "<group>"; };
 		04FCCC582592F56900A84A85 /* FWCBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCBaseTableViewCell.m; sourceTree = "<group>"; };
 		04FCCC6225A0A80000A84A85 /* FWCBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCBaseTableViewController.h; sourceTree = "<group>"; };
@@ -355,6 +390,7 @@
 			children = (
 				04447B60258EFA09005B550F /* FWCMeViewController.h */,
 				04447B61258EFA09005B550F /* FWCMeViewController.m */,
+				0491FB6C25A7FDBC00ACF828 /* Pay */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -377,6 +413,91 @@
 				046D57A22590C66C00CCFF47 /* UITabBarItem+FWCBadge.m */,
 			);
 			path = Badge;
+			sourceTree = "<group>";
+		};
+		047823AA25AB368D001E27FD /* PayBar */ = {
+			isa = PBXGroup;
+			children = (
+				0491FB7225A802C700ACF828 /* FWCPayBar.h */,
+				0491FB7325A802C700ACF828 /* FWCPayBar.m */,
+				0491FB7525A802F600ACF828 /* FWCPayBarIcon.h */,
+				0491FB7625A802F600ACF828 /* FWCPayBarIcon.m */,
+			);
+			path = PayBar;
+			sourceTree = "<group>";
+		};
+		047823AB25AB36A8001E27FD /* ServiceBar */ = {
+			isa = PBXGroup;
+			children = (
+				0478238325AB105D001E27FD /* FWCServiceBar.h */,
+				0478238425AB105D001E27FD /* FWCServiceBar.m */,
+			);
+			name = ServiceBar;
+			sourceTree = "<group>";
+		};
+		047823AC25AB36B7001E27FD /* PromotionBar */ = {
+			isa = PBXGroup;
+			children = (
+				0478238C25AB1217001E27FD /* FWCPromotionBar.h */,
+				0478238D25AB1217001E27FD /* FWCPromotionBar.m */,
+			);
+			name = PromotionBar;
+			sourceTree = "<group>";
+		};
+		047823AD25AB36C3001E27FD /* ThirdPartyServiceBar */ = {
+			isa = PBXGroup;
+			children = (
+				0478238F25AB1237001E27FD /* FWCThirdPartyServiceBar.h */,
+				0478239025AB1237001E27FD /* FWCThirdPartyServiceBar.m */,
+			);
+			path = ThirdPartyServiceBar;
+			sourceTree = "<group>";
+		};
+		047823AE25AB36DD001E27FD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0478239225AB125B001E27FD /* FWCPayPageButton.h */,
+				0478239325AB125B001E27FD /* FWCPayPageButton.m */,
+				0478239625AB1277001E27FD /* FWCPayPageTitleBlcok.m */,
+				0478239525AB1277001E27FD /* FWCPayPageTitleBlcok.h */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		047823AF25AB36F2001E27FD /* module */ = {
+			isa = PBXGroup;
+			children = (
+				047823A125AB27D4001E27FD /* FWCPayPageService.plist */,
+				047823A525AB289F001E27FD /* FWCPayPageThirdPartyService.plist */,
+				047823A325AB2869001E27FD /* FWCPayPagePromotion.plist */,
+				047823A725AB2986001E27FD /* FWCPayPageCommonButtonData.h */,
+				047823A825AB2986001E27FD /* FWCPayPageCommonButtonData.m */,
+			);
+			path = module;
+			sourceTree = "<group>";
+		};
+		047823B025AB3706001E27FD /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				0491FB6D25A7FDD800ACF828 /* FWCPayViewController.h */,
+				0491FB6E25A7FDD800ACF828 /* FWCPayViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		0491FB6C25A7FDBC00ACF828 /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				0491FB7025A8024F00ACF828 /* Pay.xcassets */,
+				047823B025AB3706001E27FD /* controller */,
+				047823AA25AB368D001E27FD /* PayBar */,
+				047823AB25AB36A8001E27FD /* ServiceBar */,
+				047823AC25AB36B7001E27FD /* PromotionBar */,
+				047823AD25AB36C3001E27FD /* ThirdPartyServiceBar */,
+				047823AE25AB36DD001E27FD /* Common */,
+				047823AF25AB36F2001E27FD /* module */,
+			);
+			name = Pay;
 			sourceTree = "<group>";
 		};
 		04FCCC4A2592F43100A84A85 /* Cell */ = {
@@ -537,7 +658,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047823A625AB289F001E27FD /* FWCPayPageThirdPartyService.plist in Resources */,
+				047823A425AB2869001E27FD /* FWCPayPagePromotion.plist in Resources */,
+				047823A225AB27D4001E27FD /* FWCPayPageService.plist in Resources */,
 				04447913258AE3F8005B550F /* Main.xcassets in Resources */,
+				0491FB7125A8024F00ACF828 /* Pay.xcassets in Resources */,
 				04FCCC9225A2242800A84A85 /* Me.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -672,18 +797,27 @@
 				04447B3D258EF8E7005B550F /* FWCBaseViewController.m in Sources */,
 				04447908258AE3F6005B550F /* AppDelegate.m in Sources */,
 				04447B46258EF93B005B550F /* FWCBaseNavigationController.m in Sources */,
+				0478239125AB1237001E27FD /* FWCThirdPartyServiceBar.m in Sources */,
 				04447B17258E26F0005B550F /* FWCThemeManager.m in Sources */,
+				0491FB7425A802C700ACF828 /* FWCPayBar.m in Sources */,
+				0478238E25AB1217001E27FD /* FWCPromotionBar.m in Sources */,
 				04FCCC6425A0A80000A84A85 /* FWCBaseTableViewController.m in Sources */,
 				046D57A32590C66C00CCFF47 /* UITabBarItem+FWCBadge.m in Sources */,
 				04447B25258EEA43005B550F /* FWCThemeProvider.m in Sources */,
 				04447919258AE3F8005B550F /* main.m in Sources */,
 				04447AE4258E10EB005B550F /* FWCAppLifeCycleProvider.m in Sources */,
 				044479BD258CBE62005B550F /* FWCColor.m in Sources */,
+				0478239425AB125B001E27FD /* FWCPayPageButton.m in Sources */,
+				047823A925AB2986001E27FD /* FWCPayPageCommonButtonData.m in Sources */,
 				044479C5258CCB23005B550F /* FWCTabBarController.m in Sources */,
+				0491FB6F25A7FDD800ACF828 /* FWCPayViewController.m in Sources */,
+				0478238525AB105D001E27FD /* FWCServiceBar.m in Sources */,
 				04447B4D258EF9B7005B550F /* FWCHomeViewController.m in Sources */,
 				04FCCC8125A16FCC00A84A85 /* FWCCommonTableViewCell.m in Sources */,
 				04447B5B258EF9F7005B550F /* FWCDiscoverViewController.m in Sources */,
 				046D579D258F94AC00CCFF47 /* FWCBadge.m in Sources */,
+				0478239725AB1277001E27FD /* FWCPayPageTitleBlcok.m in Sources */,
+				0491FB7725A802F600ACF828 /* FWCPayBarIcon.m in Sources */,
 				046D5790258F8F1B00CCFF47 /* UIView+FWCUI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -839,8 +973,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4JH6GP4QD2;
+				DEVELOPMENT_TEAM = L24GNUWS59;
 				INFOPLIST_FILE = FakeWeChat/Main/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -858,8 +993,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4JH6GP4QD2;
+				DEVELOPMENT_TEAM = L24GNUWS59;
 				INFOPLIST_FILE = FakeWeChat/Main/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

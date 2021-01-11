@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>imageName</key>
+		<string>信用卡还款</string>
+		<key>label</key>
+		<string>me_pay</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>手机充值</string>
+		<key>label</key>
+		<string>me_pay</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>理财通</string>
+		<key>label</key>
+		<string>me_pay</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>生活缴费</string>
+		<key>label</key>
+		<string>me_pay</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>Q币充值</string>
+		<key>label</key>
+		<string>me_pay</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>城市服务</string>
+		<key>label</key>
+		<string>me_pay</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>腾讯公益</string>
+		<key>label</key>
+		<string>me_pay</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>医疗健康</string>
+		<key>label</key>
+		<string>me_pay</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>出行服务</string>
+		<key>label</key>
+		<string>me_pay</string>
+	</dict>
+</array>
+</plist>

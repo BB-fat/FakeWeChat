@@ -13,6 +13,8 @@
 #define FWCYogaFlexDirectionRow layout.flexDirection = YGFlexDirectionRow
 #define FWCYogaFlexDirectionColumn layout.flexDirection = YGFlexDirectionColumn
 
+#define FWCYogaFlexWrap layout.flexWrap = YGWrapWrap
+
 #define FWCYogaAlignItemsStart layout.alignItems = YGAlignFlexStart
 #define FWCYogaAlignItemsEnd layout.alignItems = YGAlignFlexEnd
 #define FWCYogaAlignItemsCenter layout.alignItems = YGAlignCenter

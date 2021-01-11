@@ -7,6 +7,7 @@
 
 #import "FWCMeViewController.h"
 #import "FWCCommonTableViewCell.h"
+#import "FWCPayViewController.h"
 #import "FWCUI.h"
 #import <YYKit/YYKit.h>
 
@@ -45,8 +46,10 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return FWCBaseTableViewCell.cellHeight;
 }
-
+#pragma mark 跳转
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    FWCPayViewController *pay = [FWCPayViewController new];
+    [self.navigationController pushViewController:pay animated:YES];
 }
 
 @end

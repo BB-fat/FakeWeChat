@@ -21,6 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 // core colors
 + (UIColor *)coreGreen1;
 + (UIColor *)coreGreen2;
++ (UIColor *)coreGreen3;
 + (UIColor *)coreGrey1;
 + (UIColor *)coreGrey2;
 + (UIColor *)coreGrey3;
