@@ -95,10 +95,6 @@
         self.separatorInset = UIEdgeInsetsMake(0, 52, 0, 0);
     }
 
-    if (_data.fullSeparator) {
-        self.separatorInset = UIEdgeInsetsZero;
-    }
-
     _titleLabel.text = _data.title;
     [_titleLabel sizeToFit];
 

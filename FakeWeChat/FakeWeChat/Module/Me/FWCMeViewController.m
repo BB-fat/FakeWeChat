@@ -8,6 +8,8 @@
 #import "FWCMeViewController.h"
 #import "FWCCommonTableViewCell.h"
 #import "FWCMeUserTableViewCell.h"
+#import "FWCTableViewFooter.h"
+#import "FWCTableViewHeader.h"
 #import "FWCUI.h"
 #import <YYKit/YYKit.h>
 
@@ -65,9 +67,6 @@
         FWCCommonTableViewCellData *data = FWCCommonTableViewCellData.new;
         data.title = self.cellData[indexPath.section][indexPath.row][kCellDataTitle];
         data.iconName = self.cellData[indexPath.section][indexPath.row][kCellDataIcon];
-        if (indexPath.row == self.cellData[indexPath.section].count - 1) {
-            data.fullSeparator = YES;
-        }
         commonCell.data = data;
         [commonCell reloadData];
         cell = commonCell;
@@ -79,10 +78,12 @@
     if (section == 0) {
         return UIView.alloc.init;
     } else {
-        UIView *headerView = [UIView.alloc initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 10)];
-        headerView.backgroundColor = FWCColor.background;
-        return headerView;
+        return FWCTableViewHeader.alloc.init;
     }
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    return FWCTableViewFooter.alloc.init;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

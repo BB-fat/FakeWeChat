@@ -17,8 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, strong) NSString *subTitle;
 
-@property(nonatomic, assign) BOOL fullSeparator;
-
 @end
 
 @interface FWCCommonTableViewCell : FWCBaseTableViewCell
