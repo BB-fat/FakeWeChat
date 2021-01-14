@@ -40,6 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIColor *)cellBackground;
 + (UIColor *)normalText;
 + (UIColor *)greyText;
++ (UIColor *)separator;
 
 @end
 

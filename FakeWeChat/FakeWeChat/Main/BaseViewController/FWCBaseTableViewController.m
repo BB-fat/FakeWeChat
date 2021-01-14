@@ -23,6 +23,14 @@
     self.tableView.separatorColor = FWCColorThemed(FWCHexColor(@"E4E5E6"), FWCHexColor(@"232425"));
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
+    if (!self.showNavigationBarDivider) {
+        self.navigationController.navigationBar.shadowImage = UIImage.new;
+    }
+}
+
 #pragma mark NavigationController外观
 - (UIColor *)titleViewTintColor {
     return FWCColor.normalText;
@@ -34,6 +42,15 @@
 
 - (UITabBarItem *)fwc_tabBarItem {
     return self.navigationController.tabBarItem;
+}
+
+- (BOOL)shouldCustomizeNavigationBarTransitionIfHideable {
+    return YES;
+}
+
+// 控制NavigationBar分割线的显示
+- (BOOL)showNavigationBarDivider {
+    return NO;
 }
 
 @end
